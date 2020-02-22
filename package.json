@@ -1,15 +1,15 @@
 {
-  "name": "whatabyte",
+  "name": "nextjsboilerplate",
   "version": "1.0.0",
-  "description": "",
+  "description": "next js boilerplate",
   "main": "index.js",
   "scripts": {
     "dev": "node index.js",
     "build": "next build",
     "start": "NODE_ENV=production node index.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["nextjs", "boilerplate"],
+  "author": "rahulvramesh<rahulvramesh@hotmail.com>",
   "license": "ISC",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.27",
