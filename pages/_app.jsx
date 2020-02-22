@@ -7,8 +7,6 @@ import Layout from "../components/Layout";
 import { appWithTranslation } from '../i18n'
 
 
-//export default appWithTranslation(withRedux(initStore, { debug: true })(
-
 class MyApp extends App {
     static async getInitialProps({ Component, ctx }) {
         return {
@@ -23,18 +21,14 @@ class MyApp extends App {
     render() {
         const {Component, pageProps, store} = this.props;
         return (
-           
-                <Provider store={store}>
-                    <Layout>
-                        <Component {...pageProps} />
-                    </Layout>
+                <Provider store={store}>         
+                        <Component {...pageProps} />      
                 </Provider>
-     
         );
     }
 };
 
-//));
+
 export default withRedux(initStore,{ debug: true })(appWithTranslation(MyApp));
 
 

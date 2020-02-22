@@ -20,7 +20,7 @@ const Layout = props => {
         <meta charSet="utf-8" />
       </Head>
 
-      <Header appTitle={appTitle} />
+       <Header appTitle={appTitle} />
         <div className="Content">{props.children}</div>
         <NavBar navButtons={navButtons} />
     </div>
