@@ -4,9 +4,10 @@ import withRedux from 'next-redux-wrapper';
 import { initStore } from '../redux';
 
 import Layout from "../components/Layout";
+import { appWithTranslation } from '../i18n'
 
 
-export default withRedux(initStore, { debug: true })(
+//export default appWithTranslation(withRedux(initStore, { debug: true })(
 
 class MyApp extends App {
     static async getInitialProps({ Component, ctx }) {
@@ -31,6 +32,9 @@ class MyApp extends App {
      
         );
     }
-}
+};
 
-);
+//));
+export default withRedux(initStore,{ debug: true })(appWithTranslation(MyApp));
+
+

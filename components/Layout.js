@@ -22,7 +22,7 @@ const Layout = props => {
 
       <Header appTitle={appTitle} />
         <div className="Content">{props.children}</div>
-      <NavBar navButtons={navButtons} />
+        <NavBar navButtons={navButtons} />
     </div>
   );
 };

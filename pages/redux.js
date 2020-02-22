@@ -1,15 +1,12 @@
 import React from "react";
 import {connect} from "react-redux";
 
-import Layout from "../components/Layout";
 
 
 const ProfileView = props => (
     <div>
-        <Layout>
             <div>Prop from Redux {props.foo}</div>
             <div>Prop from getInitialProps {props.custom}</div>
-        </Layout>
     </div>
 );
 
