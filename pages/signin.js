@@ -1,16 +1,20 @@
 import React from 'react';
-import { DatePicker, message } from 'antd';
+import { Layout,Card } from 'antd';
+import { Row, Col } from 'antd';
 
-import SigninComponent from '../components/auth/Signin'
+const { Content } = Layout;
 
+import "./signin.scss";
 
 const Signin = props => (
     <div>
-            <div className="container">
-
-                 <DatePicker />
-
-            </div>
+                <Row className="loginbox-container">
+                    <Col xl={{ span: 12 , offset: 6}}  xs={{ span: 24}}>
+                        <Card className="loginbox">
+                            Working
+                        </Card>
+                    </Col>
+                </Row>
     </div>
 );
 

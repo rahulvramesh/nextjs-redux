@@ -1,8 +1,9 @@
 
 
 const withCss = require('@zeit/next-css')
+const withScss = require('@zeit/next-sass')
 
-module.exports = withCss({
+module.exports = withScss(withCss({
   webpack: (config, { isServer }) => {
     if (isServer) {
       const antStyles = /antd\/.*?\/style\/css.*?/
@@ -31,7 +32,7 @@ module.exports = withCss({
         ? process.env.LOCALE_SUBPATHS
         : 'none',
   }
-})
+}))
 
 
 
